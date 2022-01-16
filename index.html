@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>YING-CHIEH Web1227</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap-4.3.1.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.7.2-web/css/all.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+            padding: 100px 0;
+            background: linear-gradient(200deg, #ffffff) fixed center center / 100% 100%;
+        }
+
+        .wrap {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            margin: 70px;
+            background: #fff;
+            /* border: 1px solid #888; */
+            /* box-shadow: 0 10px 30px rgba(112, 16, 16, 0.4);  */
+        }
+
+        .item2 {
+            margin-bottom: -200px;
+        }
+
+        .item2 .txt2 h2 {
+            text-align: center;
+        }
+
+        .item2 .txt2 p {
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .item2 .txt2 .btn2 {
+            line-height: 1.5em;
+            border: 2px solid #ccc;
+            padding: 0 2em;
+            color: rgb(255, 255, 255);
+            background-color: rgb(92, 77, 77);
+        }
+
+        .item h2 {
+            font-weight: 200;
+            font-size: 50pt;
+        }
+
+        .item p {
+            font-weight: 300;
+        }
+
+        .item .pic {
+            width: 55%;
+            flex-shrink: 0;
+        }
+
+        .item .pic img {
+            width: 100%;
+            vertical-align: middle;
+            box-shadow: 0 10px 30px rgba(131, 87, 87, 1);
+        }
+
+        .item .txt {
+            /* width: 500px; */
+            height: 360px;
+            width: 55%;
+            flex-shrink: 0;
+            padding: 50px 30px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 10px 30px rgba(112, 16, 16, 0.4);
+            background-color: rgba(109, 59, 30, 0.5);
+        }
+
+        .item> :first-child {
+            margin-right: -10%;
+        }
+
+        .item .txt .btn1 {
+            line-height: 1.5em;
+            border: 1px solid rgb(134, 59, 59);
+            padding: 0 1em;
+            text-align: right;
+            align-self: flex-end;
+            text-decoration: none;
+            border-radius: 200px;
+            margin-top: auto;
+            color: rgb(10, 7, 7);
+            position:absolute;
+            right:40px;
+        }
+
+        .item .txt .btn2 {
+            line-height: 1.5em;
+            border: 1px solid rgb(110, 40, 40);
+            padding: 0 1em;
+            align-self: flex-end;
+            text-decoration: none;
+            border-radius: 200px;
+            margin-top: auto;
+            vertical-align: right;
+            color: rgb(39, 35, 35);
+        }
+
+        .item .txt .btn:hover {
+            background-color: #ccc;
+            color: #fff;
+        }
+
+        /* 第三區塊 */
+        .news-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: linear-gradient(-30deg, #fdaecb, #e7597f, #fe8556);
+        }
+
+        .container-news {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item-news {
+            width: 368px;
+            margin: 0 15px;
+            display: flex;
+            background-color: #fff;
+            border: 1px solid #888;
+            /* box-shadow: 0 10px 30px rgba(160,0,0,.5); */
+        }
+
+        .item-news .pic {
+            width: 50%;
+        }
+
+        .item-news .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .item-news .txt {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item-news .txt h4 {
+            font-weight: 400;
+            margin-bottom: .4em;
+        }
+
+        .item-news .txt p {
+            font-weight: 280;
+        }
+
+        .item-news .txt .btn {
+            line-height: 1.5em;
+            border: 1px solid rgb(110, 40, 40);
+            padding: 0 1em;
+            align-self: flex-end;
+            text-decoration: none;
+            border-radius: 200px;
+            margin-top: auto;
+            color: rgb(39, 35, 35);
+        }
+
+        .item-news .txt .btn:hover {
+            background-color: #ccc;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body id="top">
+    <!-- bs導覽列套件:navbar -->
+    <!-- #井字符號不要加中文字 -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="./img/business logo.png" alt=""></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto">
+                <!-- mr就是移到左邊 ml就是移到右邊-->
+                <li class="nav-item active">
+                    <a class="nav-link js-scroll-trigger" href="#top">回首頁 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">關於我</a>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#news">最新消息</a>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#service">服務項目</a>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">聯繫我</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <p id="practice" style="background:gray; color:white">*此網頁為練習教學用，非商業用途*</p>
+
+    <!-- 第一區塊:home-section -->
+    <section id="home" class="home-section">
+        <div class="container row-bg">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h1><i class="fas fa-city text-danger pr-2"></i>導覽</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sapiente natus nemo tempora,
+                        eum quidem corporis
+                        assumenda. Dolores inventore enim dolore beatae veniam. Accusantium adipisci aspernatur
+                        obcaecati eos, omnis aut?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="item2" class="p-section">
+        <div class="container">
+            <div class="txt2">
+                <h2>Lorem ipsum dolor</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde cupiditate nemo, saepe, consequuntur
+                    ab
+                    assumenda at facilis alias eaque cum amet, dolore illo pariatur eveniet repudiandae excepturi est
+                    minima
+                    reiciendis!</p>
+                <a href="#" class="btn2">more</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-item">
+        <!-- item1 -->
+        <div class="item col-xl-12">
+            <div class="pic">
+                <img src="./img/1U2A8230.jpg" alt="">
+            </div>
+            <div class="txt">
+                <h2>resouces</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex qui, fugit officiis perspiciatis, amet
+                    repellendus aliquid, .....</p>
+                <a href="#" class="btn1">more</a>
+            </div>
+        </div>
+        <!-- item2-->
+        <div class="item col-xl-12">
+            <div class="txt">
+                <h2>subscripition</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex qui, fugit officiis perspiciatis, amet
+                    repellendus aliquid, ......</p>
+                <a href="#" class="btn2">more</a>
+            </div>
+            <div class="pic">
+                <img src="./img/1U2A9589.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 第二區塊:about-section -->
+    <section id="about" class="about-section">
+        <div class="container row-bg">
+            <div class="row">
+                <!-- 獨立 -->
+                <div class="col-xl-12">
+                    <h1>關於我</h1>
+                </div>
+                <!-- 獨立 切版-->
+                <div class="row">
+                    <!-- 獨立-左邊 -->
+                    <div class="col-xl-6">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sapiente natus nemo
+                            tempora,
+                            eum quidem corporis
+                            assumenda. Dolores inventore enim dolore beatae veniam. Accusantium adipisci aspernatur
+                            obcaecati eos, omnis aut?</p>
+                    </div>
+                    <!-- 獨立 右邊 -->
+                    <div class="col-xl-6">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sapiente natus nemo
+                            tempora,
+                            eum quidem corporis
+                            assumenda. Dolores inventore enim dolore beatae veniam. Accusantium adipisci aspernatur
+                            obcaecati eos, omnis aut?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 第三區塊:news-section -->
+    <section id="news" class="news-section">
+        <div class="container-news">
+            <div class="row">
+                <div class="col-lg-2 col-xl-4">
+                    <div class="item-news">
+                        <div class="pic">
+                            <img src="./img/1U2A0233.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <h4>最新消息</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sapiente natus nemo
+                                tempora,
+                                eum qui.......</p>
+                            <a href="#" class="btn">more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-xl-4">
+                    <div class="item-news">
+                        <div class="pic">
+                            <img src="./img/1U2A0233.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <h4>最新消息</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sapiente natus nemo
+                                tempora,
+                                eum qui.....</p>
+                            <a href="#" class="btn">more</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-xl-4">
+                    <div class="item-news">
+                        <div class="pic">
+                            <img src="./img/1U2A0233.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <h4>最新消息</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sapiente natus nemo
+                                tempora,
+                                eum qui..... </p>
+                            <a href="#" class="btn">more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 第四區塊:service-section -->
+    <section id="service" class="service-section">
+        <div class="container row-bg">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h1>服務項目</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sapiente natus nemo tempora,
+                        eum quidem corporis
+                        assumenda. Dolores inventore enim dolore beatae veniam. Accusantium adipisci aspernatur
+                        obcaecati eos, omnis aut?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 第五區塊:contact-section -->
+    <section id="contact" class="contact-section">
+        <div class="container row-bg">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h1>聯繫我</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sapiente natus nemo tempora,
+                        eum quidem corporis
+                        assumenda. Dolores inventore enim dolore beatae veniam. Accusantium adipisci aspernatur
+                        obcaecati eos, omnis aut?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <span>Copyright © Ying-Chieh 2022</span>
+                </div>
+                <!-- md => 768px ~ 992px -->
+                <!-- ml => 576px ~ 768px  -->
+                <div class="col-md-6 col-sm-6">
+                    <ul class="social">
+                        <li><a href="#" class="fas fa-cloud-sun"></a></li>
+                        <li><a href="#" class="fas fa-bicycle"></a></li>
+                        <li><a href="#" class="fas fa-dolly-flatbed"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery (necessary for Boostrap's JavaScript plugins) -->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include indivual files as needed -->
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap-4.3.1.js"></script>
+
+    <!-- 加上捲動的主程式 -->
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/freelancer.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+</body>
+
+</html>
